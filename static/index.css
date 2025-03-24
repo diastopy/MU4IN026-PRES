@@ -1,50 +1,53 @@
-/* 🌸 Styles mignons pour la page vidéo */
+/* Base styling */
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #fbeeff;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
     color: #333;
-    text-align: center;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
+/* Titre */
 h1 {
-    color: #ff69b4;
-    font-size: 28px;
-}
-
-select {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
     padding: 10px;
+    background-color: #ecf0f1;
     border-radius: 8px;
-    border: 2px solid #ff69b4;
-    background-color: #fff;
-    color: #333;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-select:hover {
-    background-color: #ffdbf3;
-}
-
-video {
-    margin-top: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
     width: 80%;
-    max-width: 720px;
+    max-width: 600px;
 }
 
-.container {
-    background: #fff;
+/* Vidéo */
+video {
+    width: 80%;
+    max-width: 800px;
     border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
 }
 
-.footer {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #777;
+/* Pour les petits écrans */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+        max-width: none;
+    }
 }
