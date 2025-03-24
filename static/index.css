@@ -1,0 +1,50 @@
+/* 🌸 Styles mignons pour la page vidéo */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fbeeff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 28px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ff69b4;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: #ffdbf3;
+}
+
+video {
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 720px;
+}
+
+.container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}

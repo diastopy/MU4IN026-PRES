@@ -1,0 +1,51 @@
+
+<!--<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Vidéo</title>
+</head>
+<body>
+    <h1>Regarder la Vidéo</h1>
+    <video width="640" height="360" controls>
+        <source src="C:/Documents/M1/PRES/video/video1.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PRES - 14</title>
+    <script>
+        function updateVideo() {
+            let selectedVideo = document.getElementById("videoSelector").value;
+            let videoElement = document.getElementById("videoPlayer");
+            videoElement.src = "/video/" + selectedVideo;
+            videoElement.load();
+        }
+    </script>
+</head>
+<body>
+    <h1>Sélectionner une vidéo</h1>
+    
+    <select id="videoSelector" onchange="updateVideo()">
+        {% for video in videos %}
+            <option value="{{ video }}">{{ video }}</option>
+        {% endfor %}
+    </select>
+
+    <h2>Lecture</h2>
+    <video id="videoPlayer" width="640" height="360" controls>
+        <source src="/video/{{ videos[0] }}" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+</body>
+</html>
+-->
+
