@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming DASH</title>
+    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+</head>
+<body>
+    <h1>Vidéo en DASH 1080p</h1>
+    <video id="videoPlayer" width="640" height="360" controls></video>
+
+    <script>
+        var player = dashjs.MediaPlayer().create();
+        player.initialize(document.getElementById("videoPlayer"), "/video/output.mpd", true);
+    </script>
+</body>
+</html>

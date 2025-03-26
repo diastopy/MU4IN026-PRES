@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choisir une Vidéo</title>
+    <script>
+        function updateVideo() {
+            var selectedVideo = document.getElementById("videoSelector").value;
+            document.getElementById("videoPlayer").src = "/video/" + selectedVideo;
+        }
+    </script>
+</head>
+<body>
+    <h1>Choisissez une Vidéo</h1>
+    
+    <!-- Sélection des vidéos -->
+    <select id="videoSelector" onchange="updateVideo()">
+        {% for video in videos %}
+        <option value="{{ video }}">{{ video }}</option>
+        {% endfor %}
+    </select>
+
+    <br><br>
+
+    <!-- Lecteur vidéo -->
+    <video id="videoPlayer" width="640" height="360" controls>
+        <source src="" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+
+</body>
+</html>
