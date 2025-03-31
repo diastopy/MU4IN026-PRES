@@ -6,7 +6,7 @@
 
 ## Passer d'une vidéo 1080p à d'autres qualités
 
-```ffmpeg -i <input>.mp4 -vf "scale=<pxLong>:<pxLarg>" -c:v libx264 -preset fast -b:v <bitrate>k -c:a aac -b:a <bitrateAudio>k <output>.mp4```
+```ffmpeg -i <input>.mp4 -vf "scale=<pxLong>:<pxLarg>" -c:v libx264 -preset fast -b:v <bitrate>k -c:a aac -b:a <bitrateAudio>k <output>.mp4```\
 Avec des exemples de bitrates :\
 360p : 500 - 1000 kbps\
 480p : 1000 - 1500 kbps\
