@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -13,6 +14,58 @@
     <script>
         var player = dashjs.MediaPlayer().create();
         player.initialize(document.getElementById("videoPlayer"), "/video/output.mpd", true);
+    </script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming DASH</title>
+    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+</head>
+<body>
+    <h1>Vidéo en DASH 1080p</h1>
+    <video id="videoPlayer" width="640" height="360" controls></video>
+
+    <label for="qualitySelector">Choisissez la qualité : </label>
+    <select id="qualitySelector">
+        <option value="1080">1080p</option>
+        <option value="720">720p</option>
+        <option value="480">480p</option>
+        <option value="360">360p</option>
+    </select>
+
+    <script>
+        var player = dashjs.MediaPlayer().create();
+        player.initialize(document.getElementById("videoPlayer"), "/video/output.mpd", true);
+
+        // Fonction pour ajuster la qualité en fonction du choix
+        function setQuality(quality) {
+            var availableBitrates = player.getBitrateInfoListFor("video");
+            var bitrate = 0;
+
+            // Trouver le bitrate correspondant à la qualité choisie
+            for (var i = 0; i < availableBitrates.length; i++) {
+                if (availableBitrates[i].height == quality) {
+                    bitrate = availableBitrates[i].bitrate;
+                    break;
+                }
+            }
+
+            // Si un bitrate est trouvé, on change la qualité
+            if (bitrate > 0) {
+                player.setQualityFor("video", bitrate);
+            }
+        }
+
+        // Écouteur d'événements sur le menu déroulant
+        document.getElementById("qualitySelector").addEventListener("change", function() {
+            var selectedQuality = parseInt(this.value, 10);
+            setQuality(selectedQuality);
+        });
     </script>
 </body>
 </html>
