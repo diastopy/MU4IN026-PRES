@@ -14,3 +14,6 @@ Avec des exemples de bitrates :
 1080p : 3500 - 5000 kbps
 \
 En général le bitrate audio est à 128k\
+
+Pour créer un mpd à partir d'UNE source vidéo :
+`ffmpeg -i video/video1.mp4 -map 0 -c:a aac -b:a 128k -c:v libx264 -b:v 5000k -s 1920x1080 -f dash video/output.mpd`
