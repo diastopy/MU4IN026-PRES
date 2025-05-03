@@ -27,4 +27,6 @@ En général le bitrate audio est à 128k
 
 ## Pour la v5
 
+(Pour ceux comme moi qui n'ont pas Flash dans leur environnement python, avant de démarrer le serveur entrez : source venv/bin/activate)
+
 aller dans video5 -> lancer le script ./decoupage2.sh -> puis lancer le serveur serverV5.py
