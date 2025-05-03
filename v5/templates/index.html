@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming DASH - Qualité automatique</title>
+    <link href="index.css" rel="stylesheet"/>  
+    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+</head>
+<body>
+    <h1>Streaming DASH - Qualité automatique</h1>
+
+    <button id="refreshBtn">🔄 Rafraîchir la vidéo</button>
+
+    <video id="videoPlayer" width="640" height="360" controls></video>
+
+    <script>
+        var player = dashjs.MediaPlayer().create();
+        var video = document.getElementById("videoPlayer");
+        var qualityDisplay = document.getElementById("currentQuality");
+        var refreshBtn = document.getElementById("refreshBtn");
+
+        function initializePlayer() {
+            player.initialize(video, "/video5/dash_output/output.mpd", true);
+
+            // Assurer que l'ABR est activé (automatique)
+            player.updateSettings({ streaming: { abr: { enabled: true } } });
+
+            // Vérifier la qualité automatiquement choisie
+            player.on(dashjs.MediaPlayer.events.QUALITY_CHANGE_RENDERED, function () {
+                let currentQuality = player.getQualityFor("video");
+                qualityDisplay.textContent = `Qualité actuelle: ${currentQuality + 1}`;
+            });
+        }
+
+        // Initialisation du player avec gestion automatique de la qualité
+        initializePlayer();
+
+        // Rafraîchir la vidéo
+        refreshBtn.addEventListener("click", function () {
+            let currentTime = video.currentTime;
+            player.reset();
+            initializePlayer();
+            video.currentTime = currentTime; // garder la même position dans la vidéo
+        });
+    </script>
+</body>
+</html>
