@@ -39,6 +39,6 @@ Serveur qui envoie une vidéo et qui nous permet de choisir quelle vidéo nous v
 
 Un premier découpage en segment
 
-### V4 
+### V4  
 
-Utilisation réelle de DASH : découpage en segment de plusieurs qualités de la même vidéo 
+Utilisation réelle de DASH : découpage en segment de plusieurs qualités de la même vidéo
