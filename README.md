@@ -24,3 +24,21 @@ En général le bitrate audio est à 128k
 ### et avoir plusieurs qualités (ici 360p, 480p, 720p et 1080p)
 
 ```ffmpeg -i video4/video4.mp4 -map 0:v:0 -map 0:v:0 -map 0:v:0 -map 0:v:0 -map 0:a:0 -c:v libx264 -c:a aac -ar 48000 -ac 2 -b:v:0 800k  -s:v:0 640x360  -preset fast -profile:v:0 baseline -b:v:1 1200k -s:v:1 854x480  -preset fast -profile:v:1 main -b:v:2 2500k -s:v:2 1280x720 -preset fast -profile:v:2 high -b:v:3 5000k -s:v:3 1920x1080 -preset fast -profile:v:3 high -b:a 128k -f dash -adaptation_sets "id=0,streams=v id=1,streams=a" video4/output.mpd```
+
+## Projet  
+
+### V1  
+
+serveur qui envoie une vidéo  
+
+### V2  
+
+Serveur qui envoie une vidéo et qui nous permet de choisir quelle vidéo nous voulons (s'il y en a plusieurs)
+
+### V3  
+
+Un premier découpage en segment
+
+### V4 
+
+Utilisation réelle de DASH : découpage en segment de plusieurs qualités de la même vidéo 
