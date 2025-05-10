@@ -41,4 +41,15 @@ Un premier découpage en segment
 
 ### V4  
 
+<<<<<<< HEAD
 Utilisation réelle de DASH : découpage en segment de plusieurs qualités de la même vidéo
+=======
+Utilisation réelle de DASH : découpage en segment de plusieurs qualités de la même vidéo 
+
+### Pour lancer ma version v5-paul 
+Actuellement le fichier mpd utilise 2 réprésentation de la vidéo en tuile 3x3 juste pour tester avec une QP 22 et une QP37 (qualité de compression)
+```
+python myserver.py
+gpac -i http://<URL>/dash/output.mpd:gpac:tile_mode=center:algo=grate vout
+``` 
+>>>>>>> main
