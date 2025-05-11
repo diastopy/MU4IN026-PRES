@@ -2,34 +2,13 @@
 
 ## Lancer le serveur
 
-`py serverVideo.py`
-
-## Passer d'une vidéo 1080p à d'autres qualités
-
-```ffmpeg -i <input>.mp4 -vf "scale=<pxLong>:<pxLarg>" -c:v libx264 -preset fast -b:v <bitrate>k -c:a aac -b:a <bitrateAudio>k <output>.mp4```\
-Avec des exemples de bitrates :\
-360p : 500 - 1000 kbps\
-480p : 1000 - 1500 kbps\
-720p : 2000 - 2500 kbps\
-1080p : 3500 - 5000 kbps\
-\
-En général le bitrate audio est à 128k  
-
-## Créer un mpd
-
-### et n'avoir qu'une qualité
-
-```ffmpeg -i video/video1.mp4 -map 0 -c:a aac -b:a 128k -c:v libx264 -b:v 5000k -s 1920x1080 -f dash video/output.mpd```
-
-### et avoir plusieurs qualités (ici 360p, 480p, 720p et 1080p)
-
-```ffmpeg -i video4/video4.mp4 -map 0:v:0 -map 0:v:0 -map 0:v:0 -map 0:v:0 -map 0:a:0 -c:v libx264 -c:a aac -ar 48000 -ac 2 -b:v:0 800k  -s:v:0 640x360  -preset fast -profile:v:0 baseline -b:v:1 1200k -s:v:1 854x480  -preset fast -profile:v:1 main -b:v:2 2500k -s:v:2 1280x720 -preset fast -profile:v:2 high -b:v:3 5000k -s:v:3 1920x1080 -preset fast -profile:v:3 high -b:a 128k -f dash -adaptation_sets "id=0,streams=v id=1,streams=a" video4/output.mpd```
+`py serverV<x>.py`  
 
 ## Projet  
 
 ### V1  
 
-serveur qui envoie une vidéo  
+Serveur qui envoie une vidéo  
 
 ### V2  
 
@@ -39,13 +18,18 @@ Serveur qui envoie une vidéo et qui nous permet de choisir quelle vidéo nous v
 
 Un premier découpage en segment
 
-### V4 
+### V4  
 
-Utilisation réelle de DASH : découpage en segment de plusieurs qualités de la même vidéo 
+Utilisation réelle de DASH : découpage en segment de plusieurs qualités de la même vidéo  
 
-### Pour lancer ma version v5-paul 
-Actuellement le fichier mpd utilise 2 réprésentation de la vidéo en tuile 3x3 juste pour tester avec une QP 22 et une QP37 (qualité de compression)
+### Pour utiliser la V6
+
+V6 => Utilisation des ROI manuelles
+
+Lancer la commande :  
+
+```bash
+gpac -i http://<IP_Serveur:Port_server>/<path>/output.mpd:gpac:tile_mode=center:algo=grate vout
 ```
-python myserver.py
-gpac -i http://<URL>/dash/output.mpd:gpac:tile_mode=center:algo=grate vout
-``` 
+
+avec path = {V5;V6_1;V6_2}
