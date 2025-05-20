@@ -15,9 +15,9 @@
   <AdaptationSet segmentAlignment="true" maxWidth="448" maxHeight="256" maxFrameRate="25" par="7:4" bitstreamSwitching="true" mimeType="video/mp4" startWithSAP="1">
    <SupplementalProperty schemeIdUri="urn:mpeg:dash:srd:2014" value="1,0,0,448,256"/>
    <SegmentTemplate initialization="video1080_q22_4x4_dash_track1_init.mp4"/>
-   <Representation id="1_2" codecs="hvt1.1.6.L186.80" width="448" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
+   <!--<Representation id="1_2" codecs="hvt1.1.6.L186.80" width="448" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
     <SegmentTemplate media="video1080_q22_4x4_dash_track2_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
-   </Representation>
+   </Representation> -->
    <Representation id="2_18" codecs="hvt1.1.6.L186.80" width="448" height="256" frameRate="25" sar="1:1" bandwidth="7760832" dependencyId="1">
     <SegmentTemplate media="video360to1080_q25_4x4_dash_track2_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
    </Representation>
@@ -25,9 +25,9 @@
   <AdaptationSet segmentAlignment="true" maxWidth="512" maxHeight="256" maxFrameRate="25" par="2:1" bitstreamSwitching="true" mimeType="video/mp4" startWithSAP="1">
    <SupplementalProperty schemeIdUri="urn:mpeg:dash:srd:2014" value="1,448,0,512,256"/>
    <SegmentTemplate initialization="video1080_q22_4x4_dash_track1_init.mp4"/>
-   <Representation id="1_3" codecs="hvt1.1.6.L186.80" width="512" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
+   <!--<Representation id="1_3" codecs="hvt1.1.6.L186.80" width="512" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
     <SegmentTemplate media="video1080_q22_4x4_dash_track3_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
-   </Representation>
+   </Representation> -->
    <Representation id="2_19" codecs="hvt1.1.6.L186.80" width="512" height="256" frameRate="25" sar="1:1" bandwidth="7760832" dependencyId="1">
     <SegmentTemplate media="video360to1080_q25_4x4_dash_track3_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
    </Representation>
@@ -35,9 +35,9 @@
   <AdaptationSet segmentAlignment="true" maxWidth="448" maxHeight="256" maxFrameRate="25" par="7:4" bitstreamSwitching="true" mimeType="video/mp4" startWithSAP="1">
    <SupplementalProperty schemeIdUri="urn:mpeg:dash:srd:2014" value="1,960,0,448,256"/>
    <SegmentTemplate initialization="video1080_q22_4x4_dash_track1_init.mp4"/>
-   <Representation id="1_4" codecs="hvt1.1.6.L186.80" width="448" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
+   <!--<Representation id="1_4" codecs="hvt1.1.6.L186.80" width="448" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
     <SegmentTemplate media="video1080_q22_4x4_dash_track4_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
-   </Representation>
+   </Representation> -->
    <Representation id="2_20" codecs="hvt1.1.6.L186.80" width="448" height="256" frameRate="25" sar="1:1" bandwidth="7760832" dependencyId="1">
     <SegmentTemplate media="video360to1080_q25_4x4_dash_track4_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
    </Representation>
@@ -45,9 +45,9 @@
   <AdaptationSet segmentAlignment="true" maxWidth="512" maxHeight="256" maxFrameRate="25" par="2:1" bitstreamSwitching="true" mimeType="video/mp4" startWithSAP="1">
    <SupplementalProperty schemeIdUri="urn:mpeg:dash:srd:2014" value="1,1408,0,512,256"/>
    <SegmentTemplate initialization="video1080_q22_4x4_dash_track1_init.mp4"/>
-   <Representation id="1_5" codecs="hvt1.1.6.L186.80" width="512" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
+   <!--<Representation id="1_5" codecs="hvt1.1.6.L186.80" width="512" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
     <SegmentTemplate media="video1080_q22_4x4_dash_track5_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
-   </Representation>
+   </Representation> -->
    <Representation id="2_21" codecs="hvt1.1.6.L186.80" width="512" height="256" frameRate="25" sar="1:1" bandwidth="7760832" dependencyId="1">
     <SegmentTemplate media="video360to1080_q25_4x4_dash_track5_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
    </Representation>
@@ -55,9 +55,9 @@
   <AdaptationSet segmentAlignment="true" maxWidth="448" maxHeight="256" maxFrameRate="25" par="7:4" bitstreamSwitching="true" mimeType="video/mp4" startWithSAP="1">
    <SupplementalProperty schemeIdUri="urn:mpeg:dash:srd:2014" value="1,0,256,448,256"/>
    <SegmentTemplate initialization="video1080_q22_4x4_dash_track1_init.mp4"/>
-   <Representation id="1_6" codecs="hvt1.1.6.L186.80" width="448" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
+   <!--<Representation id="1_6" codecs="hvt1.1.6.L186.80" width="448" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
     <SegmentTemplate media="video1080_q22_4x4_dash_track6_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
-   </Representation>
+   </Representation>-->
    <Representation id="2_22" codecs="hvt1.1.6.L186.80" width="448" height="256" frameRate="25" sar="1:1" bandwidth="7760832" dependencyId="1">
     <SegmentTemplate media="video360to1080_q25_4x4_dash_track6_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
    </Representation>
@@ -85,9 +85,9 @@
   <AdaptationSet segmentAlignment="true" maxWidth="512" maxHeight="256" maxFrameRate="25" par="2:1" bitstreamSwitching="true" mimeType="video/mp4" startWithSAP="1">
    <SupplementalProperty schemeIdUri="urn:mpeg:dash:srd:2014" value="1,1408,256,512,256"/>
    <SegmentTemplate initialization="video1080_q22_4x4_dash_track1_init.mp4"/>
-   <Representation id="1_9" codecs="hvt1.1.6.L186.80" width="512" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
+   <!--<Representation id="1_9" codecs="hvt1.1.6.L186.80" width="512" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
     <SegmentTemplate media="video1080_q22_4x4_dash_track9_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
-   </Representation>
+   </Representation> -->
    <Representation id="2_25" codecs="hvt1.1.6.L186.80" width="512" height="256" frameRate="25" sar="1:1" bandwidth="7760832" dependencyId="1">
     <SegmentTemplate media="video360to1080_q25_4x4_dash_track9_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
    </Representation>
@@ -95,9 +95,9 @@
   <AdaptationSet segmentAlignment="true" maxWidth="448" maxHeight="256" maxFrameRate="25" par="7:4" bitstreamSwitching="true" mimeType="video/mp4" startWithSAP="1">
    <SupplementalProperty schemeIdUri="urn:mpeg:dash:srd:2014" value="1,0,512,448,256"/>
    <SegmentTemplate initialization="video1080_q22_4x4_dash_track1_init.mp4"/>
-   <Representation id="1_10" codecs="hvt1.1.6.L186.80" width="448" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
+   <!--<Representation id="1_10" codecs="hvt1.1.6.L186.80" width="448" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
     <SegmentTemplate media="video1080_q22_4x4_dash_track10_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
-   </Representation>
+   </Representation> -->
    <Representation id="2_26" codecs="hvt1.1.6.L186.80" width="448" height="256" frameRate="25" sar="1:1" bandwidth="7760832" dependencyId="1">
     <SegmentTemplate media="video360to1080_q25_4x4_dash_track10_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
    </Representation>
@@ -125,19 +125,19 @@
   <AdaptationSet segmentAlignment="true" maxWidth="512" maxHeight="256" maxFrameRate="25" par="2:1" bitstreamSwitching="true" mimeType="video/mp4" startWithSAP="1">
    <SupplementalProperty schemeIdUri="urn:mpeg:dash:srd:2014" value="1,1408,512,512,256"/>
    <SegmentTemplate initialization="video1080_q22_4x4_dash_track1_init.mp4"/>
-   <Representation id="1_13" codecs="hvt1.1.6.L186.80" width="512" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
+   <!--<Representation id="1_13" codecs="hvt1.1.6.L186.80" width="512" height="256" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
     <SegmentTemplate media="video1080_q22_4x4_dash_track13_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
-   </Representation>
+   </Representation>-->
    <Representation id="2_29" codecs="hvt1.1.6.L186.80" width="512" height="256" frameRate="25" sar="1:1" bandwidth="7760832" dependencyId="1">
     <SegmentTemplate media="video360to1080_q25_4x4_dash_track13_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
-   </Representation>
+   </Representation> 
   </AdaptationSet>
   <AdaptationSet segmentAlignment="true" maxWidth="448" maxHeight="312" maxFrameRate="25" par="56:39" bitstreamSwitching="true" mimeType="video/mp4" startWithSAP="1">
    <SupplementalProperty schemeIdUri="urn:mpeg:dash:srd:2014" value="1,0,768,448,312"/>
    <SegmentTemplate initialization="video1080_q22_4x4_dash_track1_init.mp4"/>
-   <Representation id="1_14" codecs="hvt1.1.6.L186.80" width="448" height="312" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
+   <!--<Representation id="1_14" codecs="hvt1.1.6.L186.80" width="448" height="312" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
     <SegmentTemplate media="video1080_q22_4x4_dash_track14_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
-   </Representation>
+   </Representation>-->
    <Representation id="2_30" codecs="hvt1.1.6.L186.80" width="448" height="312" frameRate="25" sar="1:1" bandwidth="7760832" dependencyId="1">
     <SegmentTemplate media="video360to1080_q25_4x4_dash_track14_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
    </Representation>
@@ -145,9 +145,9 @@
   <AdaptationSet segmentAlignment="true" maxWidth="512" maxHeight="312" maxFrameRate="25" par="64:39" bitstreamSwitching="true" mimeType="video/mp4" startWithSAP="1">
    <SupplementalProperty schemeIdUri="urn:mpeg:dash:srd:2014" value="1,448,768,512,312"/>
    <SegmentTemplate initialization="video1080_q22_4x4_dash_track1_init.mp4"/>
-   <Representation id="1_15" codecs="hvt1.1.6.L186.80" width="512" height="312" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
+   <!--<Representation id="1_15" codecs="hvt1.1.6.L186.80" width="512" height="312" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
     <SegmentTemplate media="video1080_q22_4x4_dash_track15_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
-   </Representation>
+   </Representation>-->
    <Representation id="2_31" codecs="hvt1.1.6.L186.80" width="512" height="312" frameRate="25" sar="1:1" bandwidth="7760832" dependencyId="1">
     <SegmentTemplate media="video360to1080_q25_4x4_dash_track15_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
    </Representation>
@@ -155,9 +155,9 @@
   <AdaptationSet segmentAlignment="true" maxWidth="448" maxHeight="312" maxFrameRate="25" par="56:39" bitstreamSwitching="true" mimeType="video/mp4" startWithSAP="1">
    <SupplementalProperty schemeIdUri="urn:mpeg:dash:srd:2014" value="1,960,768,448,312"/>
    <SegmentTemplate initialization="video1080_q22_4x4_dash_track1_init.mp4"/>
-   <Representation id="1_16" codecs="hvt1.1.6.L186.80" width="448" height="312" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
+   <!--<Representation id="1_16" codecs="hvt1.1.6.L186.80" width="448" height="312" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
     <SegmentTemplate media="video1080_q22_4x4_dash_track16_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
-   </Representation>
+   </Representation> -->
    <Representation id="2_32" codecs="hvt1.1.6.L186.80" width="448" height="312" frameRate="25" sar="1:1" bandwidth="7760832" dependencyId="1">
     <SegmentTemplate media="video360to1080_q25_4x4_dash_track16_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
    </Representation>
@@ -165,9 +165,9 @@
   <AdaptationSet segmentAlignment="true" maxWidth="512" maxHeight="312" maxFrameRate="25" par="64:39" bitstreamSwitching="true" mimeType="video/mp4" startWithSAP="1">
    <SupplementalProperty schemeIdUri="urn:mpeg:dash:srd:2014" value="1,1408,768,512,312"/>
    <SegmentTemplate initialization="video1080_q22_4x4_dash_track1_init.mp4"/>
-   <Representation id="1_17" codecs="hvt1.1.6.L186.80" width="512" height="312" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
+   <!--<Representation id="1_17" codecs="hvt1.1.6.L186.80" width="512" height="312" frameRate="25" sar="1:1" bandwidth="14568912" dependencyId="1">
     <SegmentTemplate media="video1080_q22_4x4_dash_track17_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
-   </Representation>
+   </Representation> -->
    <Representation id="2_33" codecs="hvt1.1.6.L186.80" width="512" height="312" frameRate="25" sar="1:1" bandwidth="7760832" dependencyId="1">
     <SegmentTemplate media="video360to1080_q25_4x4_dash_track17_$Number$.m4s" timescale="25" startNumber="1" duration="25"/>
    </Representation>
